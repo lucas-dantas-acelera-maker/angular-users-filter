@@ -1,0 +1,29 @@
+.container {
+    border: 3px solid red;
+    display: flex;
+    height: 100vh;
+}
+
+.left-container {
+    border: 3px solid green;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-div {
+    border: 3px solid yellow;
+    flex-grow: 1; // fills all the available space
+}
+
+.main-left-div {
+    border: 3px solid blue;
+    height: 80%;
+}
+
+.right-container {
+    border: 3px solid black;
+    width: 30%;
+    max-height: 100vh;
+}
