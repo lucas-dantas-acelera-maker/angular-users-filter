@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { UsersList } from './data/users-list';
+import { IUser } from './interfaces/user/user.interface';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = '06-users-list';
+  userSelected: IUser = UsersList[0];
 }
