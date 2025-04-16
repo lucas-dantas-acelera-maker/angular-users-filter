@@ -1,11 +1,9 @@
 .container {
-    border: 3px solid red;
     display: flex;
     height: 100vh;
 }
 
 .left-container {
-    border: 3px solid green;
     width: 70%;
     height: 100%;
     display: flex;
@@ -17,7 +15,6 @@
 }
 
 .main-left-div {
-    border: 3px solid blue;
     height: 80%;
 }
 
