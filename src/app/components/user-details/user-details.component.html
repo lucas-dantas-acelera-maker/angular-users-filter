@@ -8,14 +8,14 @@
 
     <mat-list-item>
       <span class="mat-h2">Nome: </span>
-      <span class="mat-h3">{{ user.nome }}</span>
+      <span class="mat-h3">{{ user.nome | emptyValue }}</span>
     </mat-list-item>
 
     <mat-divider />
 
     <mat-list-item>
       <span class="mat-h2">Email: </span>
-      <span class="mat-h3">{{ user.email }}</span>
+      <span class="mat-h3">{{ user.email | emptyValue }}</span>
     </mat-list-item>
 
     <mat-divider />
@@ -43,14 +43,16 @@
 
     <mat-list-item>
       <span class="mat-h2">Função: </span>
-      <span class="mat-h3">{{ user.funcao }}</span>
+      <span class="mat-h3">{{ user.funcao | emptyValue }}</span>
     </mat-list-item>
 
     <mat-divider />
 
     <mat-list-item>
       <span class="mat-h2">Data de Cadastro: </span>
-      <span class="mat-h3">{{ user.dataCadastro | date : "dd/MM/yyyy" }}</span>
+      <span class="mat-h3">{{
+        user.dataCadastro | date : "dd/MM/yyyy" | emptyValue
+      }}</span>
     </mat-list-item>
     <mat-divider />
   </mat-list>
