@@ -7,7 +7,10 @@
     </div>
     <div class="main-left-div">
       <!-- Left div content (80%) height: list component -->
-      <app-users-list (userSelected)="onUserSelected($event)" />
+      <app-users-list
+        [usersList]="users"
+        (userSelected)="onUserSelected($event)"
+      />
     </div>
   </div>
   <div class="right-container">
