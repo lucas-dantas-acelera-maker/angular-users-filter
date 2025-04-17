@@ -7,11 +7,11 @@
     </div>
     <div class="main-left-div">
       <!-- Left div content (80%) height: list component -->
-      <app-users-list />
+      <app-users-list (userSelected)="onUserSelected($event)" />
     </div>
   </div>
   <div class="right-container">
     <!-- Right div content: user details component -->
-    <app-user-details [user]="userSelected" />
+    <app-user-details [user]="userSelected" *ngIf="showUserDetails" />
   </div>
 </div>
